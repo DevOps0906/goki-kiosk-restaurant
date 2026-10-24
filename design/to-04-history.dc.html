@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>테이블오더 주문 내역</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:1280px;height:800px;box-sizing:border-box;background:#F4F8F7;color:#12201D;font-family:'Noto Sans KR',sans-serif;display:flex;flex-direction:column;overflow:hidden;position:relative">
+<div style="height:80px;flex:none;box-sizing:border-box;padding:0 24px;background:#FFFFFF;border-bottom:1px solid #D5E2DE;display:flex;align-items:center;gap:16px">
+<span style="width:48px;height:48px;flex:none;border-radius:24px;background:#007A64;color:#FFFFFF;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center">로고</span>
+<span style="font-size:24px;font-weight:900">[가게 이름] 숯불갈비</span>
+<span style="height:52px;padding:0 18px;border-radius:14px;background:#007A64;color:#FFFFFF;display:flex;align-items:center;gap:8px"><span style="font-size:17px">테이블</span><span style="font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700">12</span></span>
+<span style="font-size:16px;color:#4A5B57">결제는 나가실 때 카운터에서</span>
+<span style="flex:1"></span>
+
+<a href="to-04-history.dc.html" style="height:52px;padding:0 18px;box-sizing:border-box;border:1px solid #D5E2DE;border-radius:26px;background:#FFFFFF;color:#12201D;font-size:18px;text-decoration:none;display:flex;align-items:center;gap:8px">주문 내역 <span style="font-family:'JetBrains Mono',monospace;font-weight:700">66,000</span></a>
+<a href="to-05-call.dc.html" style="height:52px;padding:0 22px;box-sizing:border-box;border-radius:26px;background:#F59E0B;color:#2B1B00;font-size:18px;font-weight:700;text-decoration:none;display:flex;align-items:center">직원 호출</a>
+</div><div style="flex:1;min-height:0;display:flex;gap:24px;box-sizing:border-box;padding:24px">
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+<span style="font-size:26px;font-weight:900">우리 테이블 주문 내역</span>
+<div style="box-sizing:border-box;border-radius:16px;background:#FFFFFF;border:1px solid #D5E2DE;padding:14px 18px"><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:6px;border-bottom:1px solid #E3ECE9"><span style="font-size:19px;font-weight:700">1차 주문 <span style="font-family:'JetBrains Mono',monospace;font-weight:500;color:#4A5B57">18:05</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:19px;font-weight:700">54,000원</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>돼지갈비</b> <span style="color:#4A5B57">3인분</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3ECE9;color:#4A5B57;font-size:14px;font-weight:700;display:flex;align-items:center">나감</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">48,000</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>된장찌개</b> <span style="color:#4A5B57">1</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3ECE9;color:#4A5B57;font-size:14px;font-weight:700;display:flex;align-items:center">나감</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">4,000</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>공깃밥</b> <span style="color:#4A5B57">2공기</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3ECE9;color:#4A5B57;font-size:14px;font-weight:700;display:flex;align-items:center">나감</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">2,000</span></div></div><div style="box-sizing:border-box;border-radius:16px;background:#FFFFFF;border:1px solid #D5E2DE;padding:14px 18px"><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:6px;border-bottom:1px solid #E3ECE9"><span style="font-size:19px;font-weight:700">2차 주문 <span style="font-family:'JetBrains Mono',monospace;font-weight:500;color:#4A5B57">18:31</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:19px;font-weight:700">12,000원</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>물냉면</b> <span style="color:#4A5B57">1그릇</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#FEF3D7;color:#7A4A00;font-size:14px;font-weight:700;display:flex;align-items:center">조리 중</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">9,000</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>콜라</b> <span style="color:#4A5B57">1</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3ECE9;color:#4A5B57;font-size:14px;font-weight:700;display:flex;align-items:center">나감</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">2,000</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>공깃밥</b> <span style="color:#4A5B57">1공기</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3ECE9;color:#4A5B57;font-size:14px;font-weight:700;display:flex;align-items:center">나감</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">1,000</span></div></div><div style="box-sizing:border-box;border-radius:16px;background:#FFFFFF;border:1px solid #D5E2DE;padding:14px 18px"><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:6px;border-bottom:1px solid #E3ECE9"><span style="font-size:19px;font-weight:700">3차 주문 <span style="font-family:'JetBrains Mono',monospace;font-weight:500;color:#4A5B57">18:52</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:19px;font-weight:700">38,000원</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>돼지갈비</b> <span style="color:#4A5B57">2인분</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3F7F2;color:#00473A;font-size:14px;font-weight:700;display:flex;align-items:center">접수</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">32,000</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>공깃밥</b> <span style="color:#4A5B57">1공기</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3F7F2;color:#00473A;font-size:14px;font-weight:700;display:flex;align-items:center">접수</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">1,000</span></div><div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:18px"><span style="flex:1"><b>소주</b> <span style="color:#4A5B57">1병</span></span><span style="height:28px;padding:0 10px;border-radius:8px;background:#E3F7F2;color:#00473A;font-size:14px;font-weight:700;display:flex;align-items:center">접수</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:90px;text-align:right">5,000</span></div></div>
+</div>
+<div style="width:380px;flex:none;box-sizing:border-box;border-radius:20px;background:#FFFFFF;border:1px solid #D5E2DE;padding:24px;display:flex;flex-direction:column;gap:14px">
+<span style="font-size:20px;font-weight:700">지금까지 합계</span>
+<span style="font-family:'JetBrains Mono',monospace;font-size:48px;font-weight:700;color:#007A64;line-height:56px">104,000원</span>
+<span style="font-size:16px;color:#4A5B57">3번 주문 · 손님 4명 기준 1인 약 26,000원</span>
+<div style="box-sizing:border-box;border-radius:14px;background:#E3F7F2;padding:14px;font-size:16px;line-height:24px;color:#00473A">결제는 다 드시고 <b>카운터에서</b> 해요.<br>나눠 내기(더치페이)도 카운터에서 바로 돼요.</div>
+<div style="flex:1"></div>
+<a href="to-05-call.dc.html" style="height:64px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:0;background:#12201D;color:#FFFFFF;font-weight:700;font-family:inherit;font-size:20px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;width:100%">계산 요청하기</a>
+<a href="to-01-menu.dc.html" style="height:72px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:0;background:#007A64;color:#FFFFFF;font-weight:700;font-family:inherit;font-size:22px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;width:100%">추가 주문하기 ›</a>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1280, "height": 800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

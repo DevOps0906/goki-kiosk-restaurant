@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>테이블오더 대기 화면</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:1280px;height:800px;box-sizing:border-box;background:#F4F8F7;color:#12201D;font-family:'Noto Sans KR',sans-serif;display:flex;flex-direction:column;overflow:hidden;position:relative">
+
+<div style="flex:1;display:flex">
+<div style="flex:1;background:#12201D;color:#FFFFFF;box-sizing:border-box;padding:56px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:14px"><span style="width:56px;height:56px;border-radius:28px;background:#007A64;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center">로고</span><span style="font-size:26px;font-weight:900">[가게 이름] 숯불갈비</span></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-size:22px;color:#B9CBC6">이 자리는</span>
+<div style="display:flex;align-items:baseline;gap:12px"><span style="font-family:'JetBrains Mono',monospace;font-size:180px;font-weight:700;line-height:180px;color:#00C9A7">12</span><span style="font-size:44px;font-weight:900">번 테이블</span></div></div>
+<div style="height:200px;box-sizing:border-box;border-radius:20px;background:#33433F;display:flex;align-items:center;justify-content:center;font-size:18px;color:#B9CBC6">대표 사진 · 오늘의 추천 (돼지갈비 2인분 + 물냉면 세트)</div>
+</div>
+<div style="width:520px;flex:none;box-sizing:border-box;padding:56px 48px;display:flex;flex-direction:column;justify-content:center;gap:20px">
+<span style="font-size:34px;font-weight:900;line-height:46px">자리에서 바로<br>주문하세요</span>
+<span style="font-size:19px;line-height:30px;color:#4A5B57">고기 추가도 언제든 이 화면에서.<br><b style="color:#12201D">결제는 다 드시고 나가실 때</b> 카운터에서 한 번에 해요.</span>
+<a href="to-01-menu.dc.html" style="height:88px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:0;background:#007A64;color:#FFFFFF;font-weight:700;font-family:inherit;font-size:26px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;width:100%">메뉴 보고 주문하기 ›</a>
+<div style="display:flex;gap:12px"><a href="to-05-call.dc.html" style="height:64px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:0;background:#F59E0B;color:#2B1B00;font-weight:700;font-family:inherit;font-size:20px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;flex:1">직원 호출</a><a href="to-04-history.dc.html" style="height:64px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:20px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;flex:1">주문 내역</a></div>
+<span style="font-size:16px;color:#6B7C78">화면을 1분 동안 만지지 않으면 이 화면으로 돌아와요. 담아 둔 메뉴는 남아 있어요.</span>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1280, "height": 800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

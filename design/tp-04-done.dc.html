@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>테이블 선불 결제 완료</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:1280px;height:800px;box-sizing:border-box;background:#F4F8F7;color:#12201D;font-family:'Noto Sans KR',sans-serif;display:flex;flex-direction:row;overflow:hidden;position:relative">
+
+<div style="flex:1;box-sizing:border-box;padding:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px">
+<div style="width:96px;height:96px;border-radius:48px;background:#2563EB;display:flex;align-items:center;justify-content:center"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
+<span style="font-size:36px;font-weight:900">결제 완료 · 주방에 주문을 보냈어요</span>
+<span style="font-size:21px;color:#4A5B57">12번 테이블 · 2차 주문 · 토스페이 37,000원</span>
+<div style="box-sizing:border-box;width:600px;border-radius:20px;background:#FFFFFF;border:1px solid #D5E2DE;padding:20px 24px;display:flex;flex-direction:column;gap:8px;font-size:19px">
+<div style="display:flex;justify-content:space-between"><span>1차 주문 (18:05)</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700">결제 완료 54,000</span></div>
+<div style="display:flex;justify-content:space-between"><span>2차 주문 (18:31)</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700">결제 완료 37,000</span></div>
+<div style="border-top:1px dashed #9BB0AB"></div>
+<div style="display:flex;justify-content:space-between"><span style="color:#4A5B57">나갈 때 결제할 금액</span><span style="font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;color:#2563EB">0원</span></div>
+</div>
+<span style="font-size:17px;color:#6B7C78">영수증은 결제한 휴대폰에서 볼 수 있어요. 다 드시면 그냥 나가셔도 돼요.</span>
+<div style="display:flex;gap:14px;margin-top:6px"><a href="to-01-menu.dc.html" style="height:76px;width:260px;box-sizing:border-box;border-radius:18px;border:0;background:#2563EB;color:#FFFFFF;font-weight:700;font-family:inherit;font-size:22px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none">추가 주문하기</a><a href="to-05-call.dc.html" style="height:76px;width:200px;box-sizing:border-box;border-radius:18px;border:0;background:#F59E0B;color:#2B1B00;font-weight:700;font-family:inherit;font-size:22px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none">직원 호출</a></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1280, "height": 800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

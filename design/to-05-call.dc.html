@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>테이블오더 직원 호출</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:1280px;height:800px;box-sizing:border-box;background:#F4F8F7;color:#12201D;font-family:'Noto Sans KR',sans-serif;display:flex;flex-direction:column;overflow:hidden;position:relative">
+<div style="height:80px;flex:none;box-sizing:border-box;padding:0 24px;background:#FFFFFF;border-bottom:1px solid #D5E2DE;display:flex;align-items:center;gap:16px">
+<span style="width:48px;height:48px;flex:none;border-radius:24px;background:#007A64;color:#FFFFFF;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center">로고</span>
+<span style="font-size:24px;font-weight:900">[가게 이름] 숯불갈비</span>
+<span style="height:52px;padding:0 18px;border-radius:14px;background:#007A64;color:#FFFFFF;display:flex;align-items:center;gap:8px"><span style="font-size:17px">테이블</span><span style="font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700">12</span></span>
+<span style="font-size:16px;color:#4A5B57">결제는 나가실 때 카운터에서</span>
+<span style="flex:1"></span>
+
+<a href="to-04-history.dc.html" style="height:52px;padding:0 18px;box-sizing:border-box;border:1px solid #D5E2DE;border-radius:26px;background:#FFFFFF;color:#12201D;font-size:18px;text-decoration:none;display:flex;align-items:center;gap:8px">주문 내역 <span style="font-family:'JetBrains Mono',monospace;font-weight:700">66,000</span></a>
+<a href="to-05-call.dc.html" style="height:52px;padding:0 22px;box-sizing:border-box;border-radius:26px;background:#F59E0B;color:#2B1B00;font-size:18px;font-weight:700;text-decoration:none;display:flex;align-items:center">직원 호출</a>
+</div><div style="flex:1;min-height:0;display:flex;gap:24px;box-sizing:border-box;padding:24px 32px">
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:900">무엇을 도와드릴까요?</span><span style="font-size:18px;color:#4A5B57">누르면 카운터와 서빙 직원에게 바로 알림이 가요. 여러 개 골라도 돼요.</span></div>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px"><button aria-pressed="true" style="height:132px;box-sizing:border-box;border-radius:20px;border:3px solid #F59E0B;background:#FEF3D7;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">🔥</span><span style="font-size:21px;font-weight:700">불판 교체</span></button><button aria-pressed="false" style="height:132px;box-sizing:border-box;border-radius:20px;border:1px solid #D5E2DE;background:#FFFFFF;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">♨</span><span style="font-size:21px;font-weight:700">숯 · 불 세기</span></button><button aria-pressed="false" style="height:132px;box-sizing:border-box;border-radius:20px;border:1px solid #D5E2DE;background:#FFFFFF;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">💧</span><span style="font-size:21px;font-weight:700">물</span></button><button aria-pressed="false" style="height:132px;box-sizing:border-box;border-radius:20px;border:1px solid #D5E2DE;background:#FFFFFF;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">🦺</span><span style="font-size:21px;font-weight:700">앞치마</span></button><button aria-pressed="false" style="height:132px;box-sizing:border-box;border-radius:20px;border:1px solid #D5E2DE;background:#FFFFFF;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">✂</span><span style="font-size:21px;font-weight:700">가위 · 집게</span></button><button aria-pressed="false" style="height:132px;box-sizing:border-box;border-radius:20px;border:1px solid #D5E2DE;background:#FFFFFF;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">🧻</span><span style="font-size:21px;font-weight:700">물티슈</span></button><button aria-pressed="false" style="height:132px;box-sizing:border-box;border-radius:20px;border:1px solid #D5E2DE;background:#FFFFFF;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">🥬</span><span style="font-size:21px;font-weight:700">반찬 리필</span></button><button aria-pressed="false" style="height:132px;box-sizing:border-box;border-radius:20px;border:1px solid #D5E2DE;background:#FFFFFF;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#12201D"><span style="font-size:36px;line-height:40px">💳</span><span style="font-size:21px;font-weight:700">계산 요청</span></button></div>
+<div style="display:flex;gap:12px;align-items:center"><span style="font-size:18px;font-weight:700">직접 쓰기</span><div style="flex:1;height:56px;box-sizing:border-box;border:1px solid #D5E2DE;border-radius:14px;background:#FFFFFF;padding:0 16px;display:flex;align-items:center;font-size:18px;color:#9BB0AB">예) 아이 의자 하나 부탁해요</div></div>
+</div>
+<div style="width:340px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="box-sizing:border-box;border-radius:20px;background:#FFFFFF;border:1px solid #D5E2DE;padding:20px;display:flex;flex-direction:column;gap:10px">
+<span style="font-size:19px;font-weight:700">보낸 요청</span>
+<div style="display:flex;justify-content:space-between;font-size:17px"><span>물</span><span style="color:#007A64;font-weight:700">처리됨 18:40</span></div>
+<div style="display:flex;justify-content:space-between;font-size:17px"><span>불판 교체</span><span style="color:#7A4A00;font-weight:700">가는 중</span></div>
+</div>
+<div style="flex:1"></div>
+<button style="height:76px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:0;background:#F59E0B;color:#2B1B00;font-weight:700;font-family:inherit;font-size:22px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;width:100%">불판 교체 요청 보내기</button>
+<a href="to-01-menu.dc.html" style="height:60px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:19px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;width:100%">닫기</a>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1280, "height": 800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

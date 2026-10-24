@@ -1,0 +1,468 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T05:33:03Z"
+ },
+ "title": "고깃집 키오스크 디자인안 (테이블오더 · 카운터 키오스크)",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "mode-compare.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 900,
+   "title": "00 운영 방식 비교 (① 카운터 · ② 테이블 후불 · ③ 테이블 선불)"
+  },
+  "08-structure.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 900,
+   "title": "01 시스템 구조도 (새 구조)"
+  },
+  "09-table-state.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 640,
+   "title": "02 테이블 상태 흐름"
+  },
+  "07-flow.dc.html": {
+   "x": 4560,
+   "y": 0,
+   "w": 1440,
+   "h": 1500,
+   "title": "03 운영 방식별 주문 · 결제 흐름도"
+  },
+  "to-00-idle.dc.html": {
+   "x": 0,
+   "y": 2020,
+   "w": 1280,
+   "h": 800,
+   "title": "TO 00 대기 화면 (테이블 번호)"
+  },
+  "to-01-menu.dc.html": {
+   "x": 1360,
+   "y": 2020,
+   "w": 1280,
+   "h": 800,
+   "title": "TO 01 메뉴 · 이번 주문"
+  },
+  "to-01b-drinks.dc.html": {
+   "x": 2720,
+   "y": 2020,
+   "w": 1280,
+   "h": 800,
+   "title": "TO 01-2 주류 · 음료 (19세)"
+  },
+  "to-02-confirm.dc.html": {
+   "x": 4080,
+   "y": 2020,
+   "w": 1280,
+   "h": 800,
+   "title": "TO 02 주문 확인 (주방으로 보내기)"
+  },
+  "to-03-sent.dc.html": {
+   "x": 5440,
+   "y": 2020,
+   "w": 1280,
+   "h": 800,
+   "title": "TO 03 주문 전송 완료"
+  },
+  "to-04-history.dc.html": {
+   "x": 6800,
+   "y": 2020,
+   "w": 1280,
+   "h": 800,
+   "title": "TO 04 우리 테이블 주문 내역 (누적)"
+  },
+  "to-05-call.dc.html": {
+   "x": 8160,
+   "y": 2020,
+   "w": 1280,
+   "h": 800,
+   "title": "TO 05 직원 호출 (불판 · 숯 · 물 …)"
+  },
+  "tp-03-pay.dc.html": {
+   "x": 0,
+   "y": 3340,
+   "w": 1280,
+   "h": 800,
+   "title": "TP 03 휴대폰 간편결제 (QR) · 나갈 때 결제"
+  },
+  "tp-04-done.dc.html": {
+   "x": 1360,
+   "y": 3340,
+   "w": 1280,
+   "h": 800,
+   "title": "TP 04 결제 완료 · 주방 전송"
+  },
+  "sw-02b-table.dc.html": {
+   "x": 2720,
+   "y": 3340,
+   "w": 1280,
+   "h": 800,
+   "title": "① 옵션 · 테이블 번호 입력 (나갈 때 결제 매장)"
+  },
+  "ct-01-board.dc.html": {
+   "x": 0,
+   "y": 4660,
+   "w": 1280,
+   "h": 800,
+   "title": "CT 01 테이블 현황판 · 호출"
+  },
+  "ct-02-bill.dc.html": {
+   "x": 1360,
+   "y": 4660,
+   "w": 1280,
+   "h": 800,
+   "title": "CT 02 테이블 계산서 · 결제"
+  },
+  "ct-03-move.dc.html": {
+   "x": 2720,
+   "y": 4660,
+   "w": 1280,
+   "h": 800,
+   "title": "CT 03 테이블 이동 · 합석"
+  },
+  "ct-04-slips.dc.html": {
+   "x": 4080,
+   "y": 4660,
+   "w": 1280,
+   "h": 800,
+   "title": "CT 04 주방 주문서 (첫 주문 · 추가 · 선불)"
+  },
+  "set-01-start.dc.html": {
+   "x": 0,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 1 사장님 시작"
+  },
+  "set-02-store.dc.html": {
+   "x": 1360,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 2 매장 정보"
+  },
+  "set-02b-mode.dc.html": {
+   "x": 2720,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 2-2 운영 방식 (①②③)"
+  },
+  "set-03-menu.dc.html": {
+   "x": 4080,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 3 메뉴 등록"
+  },
+  "set-04-devices.dc.html": {
+   "x": 5440,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 4 결제 단말 · 프린터 연결"
+  },
+  "set-04b-tables.dc.html": {
+   "x": 6800,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 4-2 테이블 배치 · 태블릿 연결"
+  },
+  "set-04c-pair.dc.html": {
+   "x": 8160,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 4-3 태블릿 역할 지정 (테이블 태블릿에서)"
+  },
+  "set-05-kiosk.dc.html": {
+   "x": 9520,
+   "y": 5980,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 세팅 5 키오스크 모드"
+  },
+  "sw-00-start.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 00 시작 화면 (매장/포장)"
+  },
+  "sw-01-menu.dc.html": {
+   "x": 1360,
+   "y": 7300,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 01 메뉴 선택 (갈비)"
+  },
+  "sw-01b-drinks.dc.html": {
+   "x": 2720,
+   "y": 7300,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 01-2 주류 · 음료"
+  },
+  "sw-02-cart.dc.html": {
+   "x": 4080,
+   "y": 7300,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 02 주문 확인"
+  },
+  "sw-03-pay.dc.html": {
+   "x": 5440,
+   "y": 7300,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 03 결제 방법 선택 · 쿠폰"
+  },
+  "sw-04-dutch.dc.html": {
+   "x": 6800,
+   "y": 7300,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 04 더치페이 (인분 · 메뉴별)"
+  },
+  "sw-05-done.dc.html": {
+   "x": 8160,
+   "y": 7300,
+   "w": 1280,
+   "h": 800,
+   "title": "SW 05 주문 완료 · 주방 주문서"
+  },
+  "00-start.dc.html": {
+   "x": 0,
+   "y": 8620,
+   "w": 800,
+   "h": 1280,
+   "title": "HW 00 시작 화면 (매장/포장)"
+  },
+  "Main.dc.html": {
+   "x": 880,
+   "y": 8620,
+   "w": 800,
+   "h": 1280,
+   "title": "HW 01 메뉴 선택 (갈비)"
+  },
+  "01b-drinks.dc.html": {
+   "x": 1760,
+   "y": 8620,
+   "w": 800,
+   "h": 1280,
+   "title": "HW 01-2 주류 · 음료"
+  },
+  "02-cart.dc.html": {
+   "x": 2640,
+   "y": 8620,
+   "w": 800,
+   "h": 1280,
+   "title": "HW 02 주문 확인"
+  },
+  "03-pay-method.dc.html": {
+   "x": 3520,
+   "y": 8620,
+   "w": 800,
+   "h": 1280,
+   "title": "HW 03 결제 방법 선택 · 쿠폰"
+  },
+  "04-dutch.dc.html": {
+   "x": 4400,
+   "y": 8620,
+   "w": 800,
+   "h": 1280,
+   "title": "HW 04 더치페이 (메뉴별 · 인분)"
+  },
+  "05-done.dc.html": {
+   "x": 5280,
+   "y": 8620,
+   "w": 800,
+   "h": 1280,
+   "title": "HW 05 주문 완료 · 주방 주문서"
+  },
+  "06-responsive.dc.html": {
+   "x": 0,
+   "y": 10420,
+   "w": 1200,
+   "h": 720,
+   "title": "06 반응형 구간 · 폰트 기준"
+  },
+  "install-compare.dc.html": {
+   "x": 1280,
+   "y": 10420,
+   "w": 1240,
+   "h": 800,
+   "title": "설치 방식 비교 (HW vs SW)"
+  },
+  "coupon-dashboard.dc.html": {
+   "x": 0,
+   "y": 11740,
+   "w": 1440,
+   "h": 1100,
+   "title": "쿠폰 1 사장님 쿠폰 관리 대시보드 (반응형)",
+   "expand": "fill"
+  },
+  "coupon-create.dc.html": {
+   "x": 1520,
+   "y": 11740,
+   "w": 1440,
+   "h": 1100,
+   "title": "쿠폰 2 사장님 쿠폰 발행 (반응형)",
+   "expand": "fill"
+  },
+  "hw-coupon-serial.dc.html": {
+   "x": 3040,
+   "y": 11740,
+   "w": 800,
+   "h": 1280,
+   "title": "쿠폰 3 손님 · 스탠드형 시리얼 입력"
+  },
+  "hw-coupon-scan.dc.html": {
+   "x": 3920,
+   "y": 11740,
+   "w": 800,
+   "h": 1280,
+   "title": "쿠폰 4 손님 · 스탠드형 바코드 스캔"
+  },
+  "sw-coupon-serial.dc.html": {
+   "x": 4800,
+   "y": 11740,
+   "w": 1280,
+   "h": 800,
+   "title": "쿠폰 5 손님 · 갤럭시탭 시리얼 입력"
+  },
+  "sw-coupon-scan.dc.html": {
+   "x": 6160,
+   "y": 11740,
+   "w": 1280,
+   "h": 800,
+   "title": "쿠폰 6 손님 · 갤럭시탭 바코드 스캔"
+  }
+ },
+ "order": [
+  "mode-compare.dc.html",
+  "08-structure.dc.html",
+  "09-table-state.dc.html",
+  "07-flow.dc.html",
+  "to-00-idle.dc.html",
+  "to-01-menu.dc.html",
+  "to-01b-drinks.dc.html",
+  "to-02-confirm.dc.html",
+  "to-03-sent.dc.html",
+  "to-04-history.dc.html",
+  "to-05-call.dc.html",
+  "tp-03-pay.dc.html",
+  "tp-04-done.dc.html",
+  "sw-02b-table.dc.html",
+  "ct-01-board.dc.html",
+  "ct-02-bill.dc.html",
+  "ct-03-move.dc.html",
+  "ct-04-slips.dc.html",
+  "set-01-start.dc.html",
+  "set-02-store.dc.html",
+  "set-02b-mode.dc.html",
+  "set-03-menu.dc.html",
+  "set-04-devices.dc.html",
+  "set-04b-tables.dc.html",
+  "set-04c-pair.dc.html",
+  "set-05-kiosk.dc.html",
+  "sw-00-start.dc.html",
+  "sw-01-menu.dc.html",
+  "sw-01b-drinks.dc.html",
+  "sw-02-cart.dc.html",
+  "sw-03-pay.dc.html",
+  "sw-04-dutch.dc.html",
+  "sw-05-done.dc.html",
+  "00-start.dc.html",
+  "Main.dc.html",
+  "01b-drinks.dc.html",
+  "02-cart.dc.html",
+  "03-pay-method.dc.html",
+  "04-dutch.dc.html",
+  "05-done.dc.html",
+  "06-responsive.dc.html",
+  "install-compare.dc.html",
+  "coupon-dashboard.dc.html",
+  "coupon-create.dc.html",
+  "hw-coupon-serial.dc.html",
+  "hw-coupon-scan.dc.html",
+  "sw-coupon-serial.dc.html",
+  "sw-coupon-scan.dc.html"
+ ],
+ "notes": {
+  "docTitle": {
+   "x": 0,
+   "y": -260,
+   "text": "고깃집 키오스크 · 운영 방식 3가지 · 구조도 · 흐름도",
+   "kind": "title1",
+   "maxW": 6000
+  },
+  "toTitle": {
+   "x": 0,
+   "y": 1760,
+   "text": "② 테이블오더 · 나갈 때 결제 (고깃집 기본) · 테이블 태블릿 1280×800",
+   "kind": "title1",
+   "maxW": 9440
+  },
+  "tpTitle": {
+   "x": 0,
+   "y": 3080,
+   "text": "③ 테이블오더 · 주문할 때 결제 (간편결제)  +  ① 카운터 키오스크 나갈 때 결제 옵션",
+   "kind": "title1",
+   "maxW": 4000
+  },
+  "ctTitle": {
+   "x": 0,
+   "y": 4400,
+   "text": "카운터 정산 태블릿 · 테이블 현황 · 계산서 · 주방 주문서",
+   "kind": "title1",
+   "maxW": 5360
+  },
+  "setTitle": {
+   "x": 0,
+   "y": 5720,
+   "text": "사장님 세팅 · 갤럭시탭 1280×800 (운영 방식 · 테이블 배치 추가)",
+   "kind": "title1",
+   "maxW": 10800
+  },
+  "swTitle": {
+   "x": 0,
+   "y": 7040,
+   "text": "① 카운터 키오스크 · 선불 · 갤럭시탭 가로 1280×800",
+   "kind": "title1",
+   "maxW": 9440
+  },
+  "hwTitle": {
+   "x": 0,
+   "y": 8360,
+   "text": "① 카운터 키오스크 · 선불 · 하드웨어 스탠드 세로 800×1280",
+   "kind": "title1",
+   "maxW": 6080
+  },
+  "etcTitle": {
+   "x": 0,
+   "y": 10160,
+   "text": "반응형 기준 · 설치 방식 비교",
+   "kind": "title1",
+   "maxW": 2520
+  },
+  "couponTitle": {
+   "x": 0,
+   "y": 11480,
+   "text": "쿠폰 · 사장님 발행 대시보드 + 손님 시리얼 입력 · 바코드 스캔 (② 후불은 카운터 계산서에서 적용)",
+   "kind": "title1",
+   "maxW": 7440
+  }
+ },
+ "designSystems": []
+}

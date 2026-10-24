@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>후불 키오스크 테이블 번호 입력</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:1280px;height:800px;box-sizing:border-box;background:#F4F8F7;color:#12201D;font-family:'Noto Sans KR',sans-serif;display:flex;flex-direction:row;overflow:hidden;position:relative">
+
+<div style="flex:1;display:flex">
+<div style="flex:1;box-sizing:border-box;padding:56px;display:flex;flex-direction:column;gap:20px;justify-content:center">
+<span style="font-size:17px;font-weight:700;color:#007A64">주문 확인 다음 단계 · 나갈 때 결제 매장</span>
+<span style="font-size:36px;font-weight:900;line-height:48px">앉으신 테이블 번호를<br>눌러 주세요</span>
+<span style="font-size:19px;line-height:30px;color:#4A5B57">테이블 모서리 번호판을 확인해 주세요.<br>주문은 이 번호로 쌓이고, <b style="color:#12201D">결제는 나가실 때</b> 카운터에서 해요.</span>
+<div style="display:flex;align-items:center;gap:18px">
+<div style="width:150px;height:110px;box-sizing:border-box;border-radius:12px;background:#12201D;color:#FFFFFF;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:14px;color:#B9CBC6">TABLE</span><span style="font-family:'JetBrains Mono',monospace;font-size:44px;font-weight:700">12</span></div>
+<span style="font-size:16px;color:#6B7C78">번호판 예시</span></div>
+</div>
+<div style="width:520px;flex:none;box-sizing:border-box;background:#FFFFFF;border-left:1px solid #D5E2DE;padding:40px;display:flex;flex-direction:column;gap:16px">
+<div style="height:110px;box-sizing:border-box;border:3px solid #007A64;border-radius:20px;display:flex;align-items:center;justify-content:center;gap:12px"><span style="font-family:'JetBrains Mono',monospace;font-size:64px;font-weight:700;color:#007A64">12</span><span style="font-size:26px;font-weight:700">번 테이블</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px"><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">1</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">2</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">3</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">4</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">5</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">6</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">7</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">8</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">9</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#E3ECE9;color:#12201D;font-family:inherit;font-size:22px;font-weight:700">지움</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#FFFFFF;color:#12201D;font-family:JetBrains Mono, monospace;font-size:30px;font-weight:700">0</button><button style="height:84px;border:1px solid #D5E2DE;border-radius:18px;background:#007A64;color:#FFFFFF;font-family:inherit;font-size:22px;font-weight:700">확인</button></div>
+<span style="font-size:16px;color:#6B7C78;text-align:center">없는 번호면 "등록되지 않은 테이블이에요"라고 알려 드려요</span>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1280, "height": 800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

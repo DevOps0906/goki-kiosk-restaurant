@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>카운터 테이블 계산서</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:1280px;height:800px;box-sizing:border-box;background:#F4F8F7;color:#12201D;font-family:'Noto Sans KR',sans-serif;display:flex;flex-direction:column;overflow:hidden;position:relative">
+<div style="height:76px;flex:none;box-sizing:border-box;padding:0 24px;background:#FFFFFF;border-bottom:1px solid #D5E2DE;display:flex;align-items:center;gap:14px">
+<span style="height:40px;padding:0 12px;border-radius:10px;background:#007A64;color:#FFFFFF;font-size:16px;font-weight:700;display:flex;align-items:center">카운터</span>
+<span style="font-size:22px;font-weight:900">[가게 이름] 숯불갈비</span>
+<div style="display:flex;gap:4px;margin-left:12px"><span style="height:48px;padding:0 18px;border-radius:12px;background:#12201D;color:#FFFFFF;font-size:18px;font-weight:700;display:flex;align-items:center">테이블</span><span style="height:48px;padding:0 18px;border-radius:12px;background:transparent;color:#12201D;font-size:18px;font-weight:700;display:flex;align-items:center">주문 목록</span><span style="height:48px;padding:0 18px;border-radius:12px;background:transparent;color:#12201D;font-size:18px;font-weight:700;display:flex;align-items:center">호출</span><span style="height:48px;padding:0 18px;border-radius:12px;background:transparent;color:#12201D;font-size:18px;font-weight:700;display:flex;align-items:center">오늘 매출</span></div>
+<span style="flex:1"></span>
+<span style="font-size:16px;color:#4A5B57">식사 중 <b style="color:#12201D">8</b> · 빈 테이블 <b style="color:#12201D">4</b></span>
+<span style="height:44px;padding:0 14px;border-radius:12px;background:#FEF3D7;color:#7A4A00;font-size:16px;font-weight:700;display:flex;align-items:center">호출 3</span>
+</div><div style="flex:1;min-height:0;display:flex;gap:20px;box-sizing:border-box;padding:20px">
+<div style="flex:1;min-width:0;box-sizing:border-box;border-radius:20px;background:#FFFFFF;border:1px solid #D5E2DE;padding:20px 24px;display:flex;flex-direction:column;gap:6px;overflow:hidden">
+<div style="display:flex;align-items:center;gap:14px;padding-bottom:8px">
+<span style="font-family:'JetBrains Mono',monospace;font-size:40px;font-weight:700">12</span><span style="font-size:24px;font-weight:900">번 테이블 계산서</span>
+<span style="font-size:16px;color:#4A5B57">4명 · 18:05 착석 · 47분</span><span style="flex:1"></span>
+<button style="height:44px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:16px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none">메뉴 추가</button>
+</div>
+<div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57">1차 18:05</span><span style="flex:1"><b>돼지갈비</b></span><span style="width:80px;color:#4A5B57">3인분</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">48,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57"></span><span style="flex:1"><b>된장찌개</b></span><span style="width:80px;color:#4A5B57">1</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">4,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57"></span><span style="flex:1"><b>공깃밥</b></span><span style="width:80px;color:#4A5B57">2공기</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">2,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57">2차 18:31</span><span style="flex:1"><b>물냉면</b></span><span style="width:80px;color:#4A5B57">1그릇</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">9,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57"></span><span style="flex:1"><b>콜라</b></span><span style="width:80px;color:#4A5B57">1</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">2,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57"></span><span style="flex:1"><b>공깃밥</b></span><span style="width:80px;color:#4A5B57">1공기</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">1,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57">3차 18:52</span><span style="flex:1"><b>돼지갈비</b></span><span style="width:80px;color:#4A5B57">2인분</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">32,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57"></span><span style="flex:1"><b>공깃밥</b></span><span style="width:80px;color:#4A5B57">1공기</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">1,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div><div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #E3ECE9;font-size:18px"><span style="width:84px;font-family:'JetBrains Mono',monospace;font-size:15px;color:#4A5B57"></span><span style="flex:1"><b>소주</b></span><span style="width:80px;color:#4A5B57">1병</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;width:96px;text-align:right">5,000</span><span style="width:56px;text-align:right;font-size:15px;color:#C81E3F">취소</span></div>
+<div style="flex:1"></div>
+<div style="display:flex;gap:10px"><a href="ct-03-move.dc.html" style="height:52px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:17px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none">테이블 이동</a><a href="ct-03-move.dc.html" style="height:52px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:17px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none">합석</a><button style="height:52px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:17px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none">계산서 출력</button><button style="height:52px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:17px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none">주문 기록</button></div>
+</div>
+<div style="width:380px;flex:none;display:flex;flex-direction:column;gap:12px">
+<div style="box-sizing:border-box;border-radius:20px;background:#FFFFFF;border:1px solid #D5E2DE;padding:22px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;font-size:18px"><span>주문 합계 (1~3차)</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700">104,000</span></div>
+<div style="display:flex;justify-content:space-between;font-size:18px;color:#C81E3F"><span>쿠폰 · 첫 방문 10%</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700">−10,400</span></div>
+<div style="border-top:1px solid #E3ECE9"></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:20px;font-weight:700">받을 금액</span><span style="font-family:'JetBrains Mono',monospace;font-size:38px;font-weight:700;color:#007A64">93,600원</span></div>
+</div>
+<button style="height:80px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:0;background:#007A64;color:#FFFFFF;font-weight:700;font-family:inherit;font-size:23px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;width:100%">전체 결제 93,600원</button>
+<div style="display:flex;gap:10px"><button style="height:64px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:2px solid #007A64;background:#FFFFFF;color:#007A64;font-weight:700;font-family:inherit;font-size:20px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;flex:1">더치페이</button><button style="height:64px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:20px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;flex:1">쿠폰</button></div>
+<div style="display:flex;gap:10px"><button style="height:56px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:18px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;flex:1">현금</button><button style="height:56px;padding:0 20px;box-sizing:border-box;border-radius:18px;border:1px solid #D5E2DE;background:#FFFFFF;color:#12201D;font-family:inherit;font-size:18px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;flex:1">계좌이체</button></div>
+<div style="flex:1"></div>
+<span style="font-size:15px;line-height:22px;color:#4A5B57">결제가 끝나면 12번 테이블 태블릿은 대기 화면으로 돌아가고, 테이블은 "빈 테이블"이 돼요.</span>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1280, "height": 800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
