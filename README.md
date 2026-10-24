@@ -27,6 +27,7 @@
 | [docs/01-vertical-rules.md](docs/01-vertical-rules.md) | 식당 업무 규칙 · 확장 지점 · 데이터 키 |
 | [docs/02-menu-seed.md](docs/02-menu-seed.md) | 예시 메뉴 · 테이블 · 계산서 · 쿠폰 (시드 데이터 기준) |
 | [docs/03-operation-modes.md](docs/03-operation-modes.md) | **운영 방식 · 테이블 계산서 · 결제 · 이동 · 호출 규칙** |
+| [docs/04-dev-plan.md](docs/04-dev-plan.md) | **개발 기획** — MVP 범위 · 린 검증 · 마일스톤(M1~M7 · 약 13주) · 팀 배치 · 비용 · 가격 · 리스크 |
 | [specs/table-order.md](specs/table-order.md) | ② 테이블 태블릿 명세 · 수용 시나리오 |
 | [specs/counter.md](specs/counter.md) | 카운터 정산 명세 (현황판 · 계산서 · 이동 · 합석) |
 | [specs/table-prepay.md](specs/table-prepay.md) | ③ 휴대폰 간편결제 명세 (PG 결정 후) |
@@ -65,7 +66,7 @@
 |---|---|
 | 앱 구조 | Flutter 키오스크 앱 하나가 기기 역할(입구 키오스크 · 테이블 · 카운터)에 따라 다른 화면으로 동작 + Next.js 사장님 대시보드 + Supabase — 모두 core 에 있음 |
 | 멀티에이전트 | core 의 `.claude/agents/`에 한 번만 들어 있음 (팀장 Opus · 고문 Fable · 대리 Sonnet · 사원 Haiku · 분야 3 · 검증 5) — [core docs/11](https://github.com/DevOps0906/tablet-kiosk-core/blob/master/docs/11-multi-agent.md) |
-| 작업 시점 | 테이블오더 task-028 ~ 034 (core Phase 6b). 식당 인터뷰에서 수요가 확인되면 Phase 2 다음으로 앞당길 수 있음 |
+| 작업 순서 | **고깃집 트랙** (`docs/04-dev-plan.md` 5장): M1 기반 → M2 계산서 서버 → M3 테이블 태블릿 → M4 카운터 정산 → M5 세팅 · 실기 → 시범 매장. 카페 MVP와 어느 쪽을 먼저 할지는 core D11 |
 
 ## 미리보기
 
@@ -239,7 +240,8 @@ stateDiagram-v2
 ├── docs/
 │   ├── 01-vertical-rules.md     # 식당 업무 규칙 · 확장 지점 · 데이터 키
 │   ├── 02-menu-seed.md          # 예시 메뉴 · 테이블 · 계산서 · 쿠폰
-│   └── 03-operation-modes.md    # 운영 방식 · 계산서 · 결제 · 이동 · 호출 규칙
+│   ├── 03-operation-modes.md    # 운영 방식 · 계산서 · 결제 · 이동 · 호출 규칙
+│   └── 04-dev-plan.md           # 개발 기획: MVP · 검증 · 마일스톤 · 비용 · 리스크
 ├── specs/                       # 화면별 동작 명세 + 수용 시나리오
 │   ├── table-order.md · counter.md · table-prepay.md
 │   └── counter-kiosk.md · owner-setup.md · coupon.md
